@@ -1,0 +1,23 @@
+/* styles.css */
+
+body {
+  font-family: 'Lexend', sans-serif;
+  background-color: #ffffff;
+}
+
+/* Add custom CSS to adjust container width */
+.custom-container {
+  max-width: 88%; /* Adjust this value as needed */
+  margin: 0 auto;   /* Center the container */
+}
+
+.card {
+  margin-top: 15px; /* Adjust the value as needed */
+  margin-bottom: 15px; /* Adjust the value as needed */
+}
+
+.card-button {
+  font-size: 1.3rem; /* Adjust the font size as needed */
+  padding: 0.2rem 1.2rem; /* Adjust the padding as needed */
+}
+
