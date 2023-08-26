@@ -3,158 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Card Template</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Four-Of-Clubs Web Gallery</title>
   <!-- Link to Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to your custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="Four_Of_Clubs_LH.png" type="image/png">
 </head>
 <body>
 
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/purple.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">Purple</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#about-section">
+              <img src="Four_Of_Clubs_LH.png" alt="Logo" width="10%" height="10%" class="d-inline-block">
+              Four-Of-Clubs
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Four-of-clubs?tab=repositories">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://four-of-clubs.itch.io/clydes-adventure-pico-8">Clyde's Adventure</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="container mt-5 custom-container">
+
+        <div class="row">
+          <div class="col-md-12 text-center mb-4">
+            <h1 class="display-4">Web Gallery</h1>
+            <p class="lead">Hover over any project!</p>
+          </div>
+        </div>
+
+          <!-- Card 1 -->
+          <div class="row">
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                <source src="LoveVideos/purple.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Purple</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 8/20/23</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LovePurple" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                  <source src="LoveVideos/flip.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Flip</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 4/10/23</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveFlip" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                  <source src="LoveVideos/PFire.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Particle Fire</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 1/21/23</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LovePFire" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 4 -->
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                  <source src="LoveVideos/Circle Pop.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Circle Pop</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 10/4/22</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveCrclsPop" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                  <source src="LoveVideos/Grid2.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Grid Two</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 1/11/23</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveGrid2" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 6 -->
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                  <source src="LoveVideos/2point.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Two Point</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 10/24/22</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/Love2Point" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 7 -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                  <source src="LoveVideos/Stars.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Stars</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 10/15/21</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveStars" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 8 -->
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                  <source src="LoveVideos/Falling.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Falling</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 1/24/23</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveFalling" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 9 -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                  <source src="LoveVideos/Neon Sea.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Neon Sea</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 10/24/22</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveSquid" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Card 10 -->
+          <div class="col-md-6">
+            <div class="card bg-light">
+              <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                  <source src="LoveVideos/JumpinBox.mp4" type="video/mp4"></source>
+              </video>
+              <div class="card-body d-flex align-items-start justify-content-between">
+                <div>
+                  <h5 class="card-title">Jumpin' Boxes</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 3/15/23</h6>
+                </div>
+                <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveJpDots" class="btn btn-dark card-button align-self-center">GitHub Page</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/flip.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">Flip</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
+      
+
+<section id="about-section" class="mt-5">
+  <div class="container">
+    <h2>About Section</h2>
+    <p>Oops come back soon</p>
+    <p>What is this?</p>
+    <p>Who am I?</p>
   </div>
-
-  <br>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/PFire.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">PFire (Particle Fire)</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/Circle Pop.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">Circle Pop</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/Grid2.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">Grid Two</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/2point.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">Two Point</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/Stars.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">Stars</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/Falling.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">Falling</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br>
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/Neon Sea.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">Neon Sea</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card">
-        <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="LoveVideos/JumpinBox.mp4" type="video/mp4" ></source>
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">Jumpin Box</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-</div>
+</section>
 
 <!-- Link to Bootstrap JS and Popper.js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
