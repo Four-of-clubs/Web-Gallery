@@ -1,8 +1,37 @@
 /* styles.css */
+:root {
+
+  --main-bg-color: white;
+  --card-bg-color: #F0F0F0;
+  --navbar-bg-color: #F0F0F0;
+
+  --text-color: black;
+  --secondary-text-color: #6C757D;
+
+  --button-color: #222222;
+}
+
+.dark-mode {
+  --main-bg-color: black;
+  --card-bg-color: #222222;
+  --navbar-bg-color: #222222;
+  
+
+  --text-color: #DEE2E6;
+  --secondary-text-color: #6C757D;
+
+  --button-color: #353535;
+}
 
 body {
   font-family: 'Lexend', sans-serif;
-  background-color: #ffffff;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+
+.secondary {
+  color: var(--secondary-text-color);
 }
 
 /* Add custom CSS to adjust container width */
@@ -14,11 +43,26 @@ body {
 .card {
   margin-top: 15px; /* Adjust the value as needed */
   margin-bottom: 15px; /* Adjust the value as needed */
+  background-color: var(--card-bg-color);
+}
+
+.navbar.navbar-light{
+  background-color: var(--navbar-bg-color);
+}
+
+.navbar-light .navbar-nav>li>a {
+  color: var(--text-color) !important;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--text-color) !important;
 }
 
 .card-button {
   font-size: 1.3rem; /* Adjust the font size as needed */
   padding: 0.2rem 1.2rem; /* Adjust the padding as needed */
+  color: white;
+  background-color: var(--button-color);
 }
 
 
@@ -27,3 +71,5 @@ body {
     display: none;
   }
 }
+
+

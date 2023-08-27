@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#about-section">
               <img src="Four_Of_Clubs_LH.png" alt="Logo" width="10%" height="10%" class="d-inline-block">
               Four-Of-Clubs
@@ -23,6 +23,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a id = "dark-mode-toggle" class="nav-link" onclick="darkModeToggle()"  onmouseover="this.style.cursor='pointer'">Dark Mode</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#about-section">About</a>
             </li>
@@ -50,14 +53,14 @@
           <!-- Card 1 -->
           <div class="row">
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card">
               <video playsinline muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                 <source src="LoveVideos/Purple.mp4" type="video/mp4"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Purple</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 8/20/23</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 8/20/23</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LovePurple" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -66,14 +69,14 @@
       
           <!-- Card 2 -->
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card ">
               <video playsinline muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                   <source src="LoveVideos/Flip.mp4#t=.1" type="video/mp4"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Flip</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 4/10/23</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 4/10/23</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveFlip" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -84,14 +87,14 @@
         <!-- Card 3 -->
         <div class="row">
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card ">
               <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                   <source src="LoveVideos/PFire.mp4" type="video/mp4"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Particle Fire</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 1/21/23</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 1/21/23</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LovePFire" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -100,14 +103,14 @@
       
           <!-- Card 4 -->
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card ">
               <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                   <source src="LoveVideos/CirclePop.mp4" type="video/mp4"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Circle Pop</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 10/4/22</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 10/4/22</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveCrclsPop" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -118,14 +121,14 @@
         <!-- Card 5 -->
         <div class="row">
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card ">
               <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                   <source src="LoveVideos/Grid2.mp4" type="video/mp4"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Grid Two</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 1/11/23</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 1/11/23</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveGrid2" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -134,14 +137,14 @@
       
           <!-- Card 6 -->
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card ">
               <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                   <source src="LoveVideos/Gold.mp4" type="video/mp4"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Gold</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 8/21/23</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 8/21/23</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveGold" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -152,14 +155,14 @@
         <!-- Card 7 -->
         <div class="row">
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card ">
               <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                   <source src="LoveVideos/Stars.mp4" type="video/mp4"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Stars</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 10/15/21</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 10/15/21</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveStars" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -168,14 +171,14 @@
       
           <!-- Card 8 -->
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card ">
               <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                   <source src="LoveVideos/Falling.mp4" type="video/mp4"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Falling</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 1/24/23</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 1/24/23</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveFalling" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -186,14 +189,14 @@
         <!-- Card 9 -->
         <div class="row">
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card ">
               <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                   <source src="LoveVideos/NeonSea.mp4" type="video/mp4"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Neon Sea</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 10/24/22</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 10/24/22</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveSquid" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -202,14 +205,14 @@
       
           <!-- Card 10 -->
           <div class="col-md-6">
-            <div class="card bg-light">
+            <div class="card ">
               <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" preload = "metadata">
                   <source src="LoveVideos/JumpinBox.mp4" type="video/mp4" preload="metadata"></source>
               </video>
               <div class="card-body d-flex align-items-start justify-content-between">
                 <div>
                   <h5 class="card-title">Jumpin' Boxes</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">LÖVE - 3/15/23</h6>
+                  <h6 class="card-subtitle mb-2 secondary">LÖVE - 3/15/23</h6>
                 </div>
                 <a href="https://github.com/Four-of-clubs/Love-Projects/tree/main/LoveJpDots" class="btn btn-dark card-button align-self-center">GitHub</a>
               </div>
@@ -222,8 +225,8 @@
             <h1 class="display-4 text-center">About</h1>
             <p class="lead"><b>What is This?</b></p>
             <p class = "text-secondary">This is a Gallery of my personal projects! 
-              <br><br> Since 2021 I've been adding to a modest collection of these small visual toys, something I catch myself referring to as “wannabe screensavers.” They are primarily built in LÖVE (also called LOVE2D) or PICO-8; both Lua-based game engines. 
-              <br><br> I have a few other projects that are more “game like” - that is, interactive. This gallery is for the ones meant to be displayed not played, though if you are itching to see a game I've made check out <a href="https://four-of-clubs.itch.io/clydes-adventure-pico-8">Clyde's Adventure!</a></p>
+              <br><br> Since 2021 I've been adding to a modest collection of these small visual toys - things I catch myself referring to as “wannabe screensavers.” They are primarily built in LÖVE (also called LOVE2D) or PICO-8; both Lua-based game engines. 
+              <br><br> I have a few other projects that are more <i>game-like</i>, that is, interactive. This gallery is for the ones meant to be displayed not played, though if you are itching to see a game I've made check out <a href="https://four-of-clubs.itch.io/clydes-adventure-pico-8">Clyde's Adventure</a>!</p>
             <p class="lead"><b>Who am I?</b></p>
             <p class = "text-secondary">My name is Alex. 
               <br><br>I'm a software developer by trade and passion, and I love yo-yos!
@@ -239,6 +242,18 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function darkModeToggle() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+     if (document.getElementById('dark-mode-toggle').innerHTML == 'Dark Mode') {
+      document.getElementById('dark-mode-toggle').innerHTML = 'Light Mode'
+     }else{
+      document.getElementById('dark-mode-toggle').innerHTML = 'Dark Mode'
+     }
+  }
+  </script>
 
 </body>
 </html>
