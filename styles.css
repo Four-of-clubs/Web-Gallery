@@ -1,6 +1,5 @@
 /* styles.css */
 :root {
-
   --main-bg-color: white;
   --card-bg-color: #F0F0F0;
   --navbar-bg-color: #F0F0F0;
@@ -8,11 +7,11 @@
   --text-color: black;
   --secondary-text-color: #6C757D;
 
-  --button-color: #222222;
+  --button-color: #353535;
 }
 
 .dark-mode {
-  --main-bg-color: black;
+  --main-bg-color: #111111;
   --card-bg-color: #222222;
   --navbar-bg-color: #222222;
   
@@ -20,8 +19,9 @@
   --text-color: #DEE2E6;
   --secondary-text-color: #6C757D;
 
-  --button-color: #353535;
+  --button-color: #222222;
 }
+
 
 body {
   font-family: 'Lexend', sans-serif;
@@ -43,19 +43,6 @@ body {
 .card {
   margin-top: 15px; /* Adjust the value as needed */
   margin-bottom: 15px; /* Adjust the value as needed */
-  background-color: var(--card-bg-color);
-}
-
-.navbar.navbar-light{
-  background-color: var(--navbar-bg-color);
-}
-
-.navbar-light .navbar-nav>li>a {
-  color: var(--text-color) !important;
-}
-
-.navbar-light .navbar-brand {
-  color: var(--text-color) !important;
 }
 
 .card-button {
@@ -65,6 +52,14 @@ body {
   background-color: var(--button-color);
 }
 
+/* Sticky Navbar, unused*/
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust this value as needed */
+}
+
+
 
 @media only screen and (min-width: 768.1px) {
   .mobileOnly{
@@ -72,4 +67,9 @@ body {
   }
 }
 
+@media only screen and (max-width: 768.1px) {
+  .PCOnly{
+    display: none;
+  }
+}
 
